@@ -1,0 +1,395 @@
+:root {
+    --blue: #1d6ee7;
+    --middle: #5d5b5e;
+    --white: #FFFFFF;
+    --text: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Courier New', Courier, monospace, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+header{
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    border: 5px double var(--white);
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:1;
+   
+}
+
+header h1 {
+    font-weight: bold; 
+    font-size: 36px;
+    color: var(--text);
+    margin: 10;
+   
+
+}
+header a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+header nav {
+    margin: 7px 0;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    margin: 10px;
+    font-weight:light;
+    font-size: 1.55vw;
+    
+}
+
+header nav ul li a:hover {
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+.horiseon-marketing-title {
+    background-color: var(--blue);
+    box-sizing: content-box;
+    text-align: center;
+    width: 100%;
+    position: ae;
+    left: 0; bottom: 0;
+    padding-bottom:10px;
+    padding-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.about-box {
+   margin: 100px auto;
+   padding-right: 100px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   flex: 1 100%;
+   justify-content: center;
+   background-color: var(--middle);
+}
+
+.section-title {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 30px;
+    flex: 1 20%;
+}
+
+.bio-section {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 30px;
+    border-left: 5px solid var(--white);
+  
+}
+
+.bio-section p {
+    width: 70%;
+    margin-bottom: 20px;
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.bio-image {
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.bio-image img {
+    max-width: 200px;
+    height: auto;
+    float: left;
+    margin: 20px 20px 0 0; 
+    flex: 2 0 0; 
+    
+}
+
+
+
+.works {
+    margin: 100px auto;
+    padding-right: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    justify-content: center;
+    background-color: var(--middle);
+    
+ }
+
+ .section-title {
+    color: var(--white);
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 30px;
+    flex: 1 20%;
+   
+}
+
+.work-container {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 30px;
+    border-left: 5px solid var(--white);
+}
+
+
+.work-container .run-buddy {
+   flex: 1 100%;
+   border: 5 px solid var(--white);
+   position: relative;
+   display: inline-block;
+   background-color: var(--blue);
+   padding: 0px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+.run-buddy img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.run-buddy a {
+    flex: 0 0 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.run-buddy-title {
+    background-color: var(--blue);
+    box-sizing: content-box;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0; bottom: 0;
+    padding-bottom:10px;
+    padding-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.run-buddy img:hover {
+    opacity: 0.3;
+}   
+
+
+.work-container .app-1, 
+.app-2,
+.app-3, 
+.app-4  {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.app-img img {
+    width: 100%;
+    min-width: 400px;
+    border: 5px solid var(--white);
+    height: auto;
+    float: left;
+    margin: 20px 20px 0 0; 
+    flex: 2 0 0; 
+}
+
+.app-img:hover {
+    opacity: 0.3;
+}
+
+.app-title-container {
+    background-color: var(--blue);
+    width:100%;
+}
+.app-title-container4 {
+    background-color: var(--blue);
+    width:20%;
+
+}
+.contact-me {
+    margin: 100px auto;
+    padding-right: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    justify-content: center;
+    background-color: var(--middle);
+}
+.contact-section {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 400px;
+    margin-left: 50px;
+}
+
+
+.contact-links {
+    width: 70%;
+    margin-left: 10px;
+    color: var(--white);
+    line-height: 1.7;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    border-left: 5px solid var(--white);
+}
+
+.contact-links ul li {
+   text-decoration: none;
+   list-style: none;
+}
+.contact-links ul li a {
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: right;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero, .hero-sub {
+        width: 100%;
+    }
+
+    .about-me {
+        flex: 0 70%;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .bio-section {
+        text-align: center;
+    }
+
+    .work {
+        flex: 0 70%;
+    }
+
+    .contact-section {
+        flex: 0 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Media Query for tablets and smaller */
+
+@media screen and (max-width: 768px) {
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .section-title {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .bio-section {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bio-image {
+        flex: 0 32%;
+        margin-right: 0%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* media query for mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+    .section title {
+        width: 95%;
+    }
+
+    .bio-section {
+        width: 100%;
+    }
+
+    .works {
+        flex: 0 100%;
+    }
+
+    .contact-section {
+        text-align: center;
+    }
+
+    .contact-links > * {
+        flex: 0 100%;
+    }
+}
